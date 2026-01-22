@@ -129,18 +129,19 @@ export default function DevelopmentPage() {
             {/* HERO SECTION */}
             <Section className="pt-32 bg-gradient-to-b from-black to-[#0a0a0a]">
                 <div className="text-center mb-16">
-                    <Badge text="Dogfooding Protocol" color="blue" />
-                    <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight leading-[1.1]">
-                        Development Division
+                    <h1 className="text-5xl md:text-7xl font-bold mb-6 tracking-tight leading-[1.1]">
+                        <span className="text-[#86868b]">Construimos el </span>
+                        <span className="text-white">software</span>
                         <br />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0071e3] to-[#00a8e8]">
-                            Internal R&D / Blackwolfsec Labs
-                        </span>
+                        <span className="text-[#86868b]">que </span>
+                        <span className="text-white text-6xl md:text-8xl">impulsa</span>
+                        <span className="text-[#86868b]"> tu negocio.</span>
                     </h1>
-                    <p className="max-w-3xl mx-auto text-lg md:text-xl text-[#86868b] leading-relaxed">
-                        Comemos nuestra propia comida (Dogfooding). Usamos lo que construimos.
+                    <p className="max-w-3xl mx-auto text-xl md:text-2xl text-[#86868b] leading-relaxed mt-8">
+                        De la <span className="text-white font-semibold">idea</span> al <span className="text-white font-semibold">código</span>.
+                        Del <span className="text-white font-semibold">código</span> a la <span className="text-white font-semibold">producción</span>.
                         <br />
-                        Herramientas diseñadas, construidas y desplegadas por nuestro equipo. No son demos, son sistemas vivos.
+                        <span className="text-[#666] text-lg mt-4 block">Arquitectura escalable. Código limpio. Propiedad intelectual protegida.</span>
                     </p>
                 </div>
             </Section>
