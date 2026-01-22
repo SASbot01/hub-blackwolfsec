@@ -105,7 +105,7 @@ export default function DevelopmentPage() {
             <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-black/80 backdrop-blur-xl border-b border-[#333]' : 'bg-transparent'}`}>
                 <div className="max-w-[1080px] mx-auto px-6 h-16 flex justify-between items-center">
                     <div className="flex items-center gap-2 font-bold text-xl tracking-tighter">
-                        <Image src="/logo.png" alt="Blackwolfsec" width={24} height={24} className="invert" />
+                        <Image src="/logo.png" alt="Blackwolfsec" width={28} height={28} className="rounded-sm" />
                         Blackwolfsec
                     </div>
 
