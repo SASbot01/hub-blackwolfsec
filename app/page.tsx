@@ -1,10 +1,12 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
+import Link from 'next/link';
 import {
   Shield, Lock, Zap, Terminal, AlertTriangle,
   CheckCircle, ChevronRight, Server, Activity,
-  Eye, FileText, XCircle, Cloud, Radar, Bot, Brain
+  Eye, FileText, XCircle, Cloud, Radar, Bot, Brain,
+  Cpu, Code, ExternalLink, Phone
 } from 'lucide-react';
 
 // --- COMPONENTES UI (ÁTOMOS) ---
@@ -113,6 +115,7 @@ export default function SecurityLanding() {
     }
   };
 
+
   return (
     <div className="min-h-screen bg-black text-[#f5f5f7] font-sans selection:bg-[#ff453a] selection:text-white overflow-x-hidden">
 
@@ -122,16 +125,29 @@ export default function SecurityLanding() {
         <div className="absolute bottom-[-10%] left-[-10%] w-[500px] h-[500px] bg-[#ff453a]/5 rounded-full blur-[120px]" />
       </div>
 
-      {/* NAVBAR SIMPLIFICADA */}
+      {/* NAVBAR */}
       <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-black/80 backdrop-blur-xl border-b border-[#333]' : 'bg-transparent'}`}>
         <div className="max-w-[1080px] mx-auto px-6 h-16 flex justify-between items-center">
           <div className="flex items-center gap-2 font-bold text-xl tracking-tighter">
             <Shield className="text-white fill-white" size={20} />
-            Blackwolfsec <span className="text-[#86868b] font-normal text-sm ml-2 hidden sm:inline-block">/ Security Division</span>
+            Blackwolfsec
           </div>
-          <a href="#authorize" className="text-xs font-mono text-[#ff453a] border border-[#ff453a]/30 px-4 py-2 rounded-lg hover:bg-[#ff453a]/10 transition-all">
-            INITIATE_PROTOCOL_V1
-          </a>
+
+          {/* Navigation Buttons */}
+          <div className="flex items-center gap-3">
+            <Link
+              href="/"
+              className="text-xs font-mono text-white border border-[#ff453a]/30 px-4 py-2 rounded-lg bg-[#ff453a]/10 transition-all"
+            >
+              Ciberseguridad
+            </Link>
+            <Link
+              href="/development"
+              className="text-xs font-mono text-[#86868b] hover:text-white px-4 py-2 rounded-lg hover:bg-[#1a1a1a] transition-all"
+            >
+              Desarrollo
+            </Link>
+          </div>
         </div>
       </nav>
 
@@ -403,6 +419,7 @@ export default function SecurityLanding() {
           </div>
         </div>
       </Section>
+
 
       {/* --- FORMULARIO DE AUTORIZACIÓN (LEGAL & TÉCNICO) --- */}
       <section id="authorize" className="py-24 bg-[#0a0a0a] relative">
@@ -762,6 +779,8 @@ export default function SecurityLanding() {
           </div>
         </div>
       )}
+
+
     </div>
   );
 }
