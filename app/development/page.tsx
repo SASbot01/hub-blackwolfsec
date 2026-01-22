@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import {
     Shield, Lock, Zap, Terminal, AlertTriangle,
     CheckCircle, ChevronRight, Server, Activity,
@@ -104,7 +105,7 @@ export default function DevelopmentPage() {
             <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-black/80 backdrop-blur-xl border-b border-[#333]' : 'bg-transparent'}`}>
                 <div className="max-w-[1080px] mx-auto px-6 h-16 flex justify-between items-center">
                     <div className="flex items-center gap-2 font-bold text-xl tracking-tighter">
-                        <Shield className="text-white fill-white" size={20} />
+                        <Image src="/logo.png" alt="Blackwolfsec" width={24} height={24} className="invert" />
                         Blackwolfsec
                     </div>
 
