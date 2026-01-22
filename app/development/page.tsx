@@ -130,18 +130,33 @@ export default function DevelopmentPage() {
             <Section className="pt-32 bg-gradient-to-b from-black to-[#0a0a0a]">
                 <div className="text-center mb-16">
                     <h1 className="text-5xl md:text-7xl font-bold mb-6 tracking-tight leading-[1.1]">
-                        <span className="text-[#86868b]">Construimos el </span>
-                        <span className="text-white">software</span>
+                        <span className="text-[#86868b] font-normal">Construimos el </span>
+                        <span className="text-white font-bold text-6xl md:text-8xl">software</span>
                         <br />
-                        <span className="text-[#86868b]">que </span>
-                        <span className="text-white text-6xl md:text-8xl">impulsa</span>
-                        <span className="text-[#86868b]"> tu negocio.</span>
+                        <span className="text-[#86868b] font-normal text-4xl md:text-6xl">que </span>
+                        <span className="text-white font-black text-7xl md:text-9xl block my-4">impulsa</span>
+                        <span className="text-[#86868b] font-normal">tu </span>
+                        <span className="text-white font-semibold text-5xl md:text-7xl">negocio</span>
+                        <span className="text-[#86868b] font-normal">.</span>
                     </h1>
-                    <p className="max-w-3xl mx-auto text-xl md:text-2xl text-[#86868b] leading-relaxed mt-8">
-                        De la <span className="text-white font-semibold">idea</span> al <span className="text-white font-semibold">código</span>.
-                        Del <span className="text-white font-semibold">código</span> a la <span className="text-white font-semibold">producción</span>.
+                    <p className="max-w-3xl mx-auto text-xl md:text-2xl text-[#86868b] leading-relaxed mt-12">
+                        <span className="text-[#666]">De la </span>
+                        <span className="text-white font-bold text-2xl md:text-3xl">idea</span>
+                        <span className="text-[#666]"> al </span>
+                        <span className="text-white font-bold text-2xl md:text-3xl">código</span>
+                        <span className="text-[#666]">.</span>
                         <br />
-                        <span className="text-[#666] text-lg mt-4 block">Arquitectura escalable. Código limpio. Propiedad intelectual protegida.</span>
+                        <span className="text-[#666]">Del </span>
+                        <span className="text-white font-bold text-2xl md:text-3xl">código</span>
+                        <span className="text-[#666]"> a la </span>
+                        <span className="text-white font-bold text-2xl md:text-3xl">producción</span>
+                        <span className="text-[#666]">.</span>
+                        <br />
+                        <span className="text-[#555] text-base md:text-lg mt-6 block font-light">
+                            Arquitectura <span className="text-[#86868b] font-medium">escalable</span>.
+                            Código <span className="text-[#86868b] font-medium">limpio</span>.
+                            Propiedad intelectual <span className="text-[#86868b] font-medium">protegida</span>.
+                        </span>
                     </p>
                 </div>
             </Section>

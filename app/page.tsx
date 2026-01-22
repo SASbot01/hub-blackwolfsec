@@ -153,16 +153,29 @@ export default function SecurityLanding() {
 
       {/* --- HERO SECTION --- */}
       <header className="relative pt-40 pb-20 md:pt-52 md:pb-32 text-center px-6 z-10">
-        <Badge text="System Status: Armed" color="blue" />
-
-        <h1 className="text-5xl md:text-8xl font-bold tracking-tighter mb-8 text-white leading-[0.95]">
-          Seguridad.<br />
-          <span className="text-transparent bg-clip-text bg-gradient-to-b from-[#86868b] to-[#1d1d1f]">Sin Piedad.</span>
+        <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-8 leading-[1.1]">
+          <span className="text-white font-bold text-6xl md:text-8xl">Seguridad</span>
+          <span className="text-[#86868b] font-normal text-4xl md:text-6xl">.</span>
+          <br />
+          <span className="text-[#86868b] font-normal text-4xl md:text-6xl">Sin </span>
+          <span className="text-white font-black text-7xl md:text-9xl block my-4">Piedad</span>
+          <span className="text-[#86868b] font-normal text-4xl md:text-6xl">.</span>
         </h1>
 
-        <p className="max-w-2xl mx-auto text-xl md:text-2xl text-[#86868b] font-medium leading-relaxed mb-12">
-          No somos auditores de papel. Somos el adversario que esperas no tener.
-          Encontramos la grieta antes de que se convierta en noticia.
+        <p className="max-w-3xl mx-auto text-xl md:text-2xl text-[#86868b] leading-relaxed mb-12 mt-12">
+          <span className="text-[#666]">No somos </span>
+          <span className="text-white font-bold text-2xl md:text-3xl">auditores</span>
+          <span className="text-[#666]"> de papel.</span>
+          <br />
+          <span className="text-[#666]">Somos el </span>
+          <span className="text-white font-bold text-2xl md:text-3xl">adversario</span>
+          <span className="text-[#666]"> que esperas </span>
+          <span className="text-white font-semibold">no tener</span>
+          <span className="text-[#666]">.</span>
+          <br />
+          <span className="text-[#555] text-base md:text-lg mt-4 block font-light">
+            Encontramos la <span className="text-[#86868b] font-medium">grieta</span> antes de que se convierta en <span className="text-[#ff453a] font-medium">noticia</span>.
+          </span>
         </p>
 
         <div className="flex flex-col sm:flex-row justify-center gap-4 items-center">
@@ -222,18 +235,31 @@ export default function SecurityLanding() {
       {/* --- METODOLOGÍA (THE METHOD) --- */}
       <Section id="metodo" className="bg-[#0a0a0a]">
         <div className="text-center mb-16">
-          <Badge text="Hybrid Stealth Ops" color="red" />
-          <h2 className="text-4xl md:text-6xl font-bold text-white mb-6 tracking-tight">
-            Más allá del escaneo automático:<br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0071e3] to-[#2997ff]">
-              Pentesting de Precisión Quirúrgica
-            </span>
+          <h2 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight leading-[1.1]">
+            <span className="text-[#86868b] font-normal text-3xl md:text-5xl">Más allá del </span>
+            <span className="text-white font-bold text-5xl md:text-7xl">escaneo</span>
+            <br />
+            <span className="text-[#86868b] font-normal text-3xl md:text-5xl">automático: </span>
+            <span className="text-white font-black text-6xl md:text-8xl block my-4">Pentesting</span>
+            <span className="text-[#86868b] font-normal text-3xl md:text-5xl">de </span>
+            <span className="text-white font-semibold text-4xl md:text-6xl">Precisión Quirúrgica</span>
           </h2>
-          <p className="max-w-3xl mx-auto text-lg md:text-xl text-[#86868b] leading-relaxed">
-            En un mundo donde los ciberataques evolucionan a diario, un escáner automático no es suficiente.
-            En <span className="text-white font-semibold">Blackwolfsec</span>, combinamos la potencia de procesamiento de la nube
-            con la intuición de un equipo Red Team experimentado. Nuestra metodología <span className="text-[#2997ff]">Hybrid Stealth Ops</span> garantiza
-            que encontramos lo que otros pasan por alto, sin interrumpir tu negocio.
+          <p className="max-w-3xl mx-auto text-lg md:text-xl text-[#86868b] leading-relaxed mt-8">
+            <span className="text-[#666]">En un mundo donde los ciberataques evolucionan a diario, un </span>
+            <span className="text-white font-semibold">escáner automático</span>
+            <span className="text-[#666]"> no es suficiente.</span>
+            <br />
+            <span className="text-[#666]">En </span>
+            <span className="text-white font-bold text-xl md:text-2xl">Blackwolfsec</span>
+            <span className="text-[#666]">, combinamos la </span>
+            <span className="text-white font-semibold">potencia</span>
+            <span className="text-[#666]"> de procesamiento de la nube con la </span>
+            <span className="text-white font-semibold">intuición</span>
+            <span className="text-[#666]"> de un equipo Red Team experimentado.</span>
+            <br />
+            <span className="text-[#555] text-base md:text-lg mt-4 block font-light">
+              Nuestra metodología <span className="text-[#2997ff] font-medium">Hybrid Stealth Ops</span> garantiza que encontramos lo que otros pasan por alto.
+            </span>
           </p>
         </div>
 
