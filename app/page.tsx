@@ -233,135 +233,207 @@ export default function SecurityLanding() {
         </div>
       </Section>
 
-      {/* --- METODOLOGÍA (THE METHOD) --- */}
+      {/* --- METODOLOGÍA OWASP TOP 10 --- */}
       <Section id="metodo" className="bg-[#0a0a0a]">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight leading-[1.1]">
-            <span className="text-[#86868b] font-normal text-3xl md:text-5xl">Más allá del </span>
-            <span className="text-white font-bold text-5xl md:text-7xl">escaneo</span>
-            <br />
-            <span className="text-[#86868b] font-normal text-3xl md:text-5xl">automático: </span>
-            <span className="text-white font-black text-6xl md:text-8xl block my-4">Pentesting</span>
-            <span className="text-[#86868b] font-normal text-3xl md:text-5xl">de </span>
-            <span className="text-white font-semibold text-4xl md:text-6xl">Precisión Quirúrgica</span>
+            <span className="text-[#86868b] font-normal text-3xl md:text-5xl">Metodología </span>
+            <span className="text-white font-black text-6xl md:text-8xl block my-4">OWASP</span>
+            <span className="text-[#86868b] font-normal text-3xl md:text-5xl">Top 10</span>
           </h2>
           <p className="max-w-3xl mx-auto text-lg md:text-xl text-[#86868b] leading-relaxed mt-8">
-            <span className="text-[#666]">En un mundo donde los ciberataques evolucionan a diario, un </span>
-            <span className="text-white font-semibold">escáner automático</span>
-            <span className="text-[#666]"> no es suficiente.</span>
-            <br />
-            <span className="text-[#666]">En </span>
-            <span className="text-white font-bold text-xl md:text-2xl">Blackwolfsec</span>
-            <span className="text-[#666]">, combinamos la </span>
-            <span className="text-white font-semibold">potencia</span>
-            <span className="text-[#666]"> de procesamiento de la nube con la </span>
-            <span className="text-white font-semibold">intuición</span>
-            <span className="text-[#666]"> de un equipo Red Team experimentado.</span>
+            <span className="text-[#666]">En nuestro servicio de </span>
+            <span className="text-white font-bold text-xl md:text-2xl">Red Team Pentesting</span>
+            <span className="text-[#666]"> utilizamos la metodología </span>
+            <span className="text-[#2997ff] font-semibold">OWASP Top 10</span>
+            <span className="text-[#666]"> como marco de referencia para identificar y clasificar vulnerabilidades críticas.</span>
             <br />
             <span className="text-[#555] text-base md:text-lg mt-4 block font-light">
-              Nuestra metodología <span className="text-[#2997ff] font-medium">Hybrid Stealth Ops</span> garantiza que encontramos lo que otros pasan por alto.
+              Un enfoque estructurado en 5 fases que garantiza cobertura completa y resultados accionables.
             </span>
           </p>
         </div>
 
-        {/* Los 4 Pilares */}
-        <div className="grid md:grid-cols-2 gap-8 mb-16">
+        {/* Las 5 Fases */}
+        <div className="space-y-8 mb-16">
 
-          {/* Pilar 1: Arquitectura Blindada */}
-          <div className="bg-[#111] border border-[#333] rounded-[24px] p-8 hover:border-[#0071e3] transition-all group">
+          {/* Fase 1: Alcance y Objetivos */}
+          <div className="bg-[#111] border border-[#333] rounded-[24px] p-8 hover:border-[#0071e3] transition-all">
             <div className="flex items-start gap-4 mb-6">
-              <div className="w-14 h-14 bg-[#0071e3]/10 rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:bg-[#0071e3]/20 transition-all">
-                <Cloud className="text-[#0071e3]" size={28} />
+              <div className="w-14 h-14 bg-[#0071e3]/10 rounded-2xl flex items-center justify-center flex-shrink-0">
+                <FileText className="text-[#0071e3]" size={28} />
               </div>
-              <div>
-                <h3 className="text-2xl font-bold text-white mb-2">🛡️ Arquitectura Blindada y Anónima</h3>
+              <div className="flex-1">
+                <h3 className="text-2xl font-bold text-white mb-3">1. Alcance y Objetivos</h3>
                 <p className="text-[#86868b] text-sm leading-relaxed">
-                  La seguridad empieza por nosotros. Operamos a través de una infraestructura de servidores cifrados
-                  (VPS tunneling) que garantiza la confidencialidad total de las pruebas. Simulamos ataques reales
-                  desde ubicaciones globales sin comprometer la integridad de tu red.
+                  El Cliente rellena el formulario con los objetivos del pentesting, nos comunica el número de peticiones por segundo que acepta y el nivel de intrusión autorizado.
                 </p>
               </div>
             </div>
-            <div className="border-t border-[#333] pt-4">
-              <p className="text-xs text-[#666] font-mono">
-                → VPS Distribuidos · Túneles Cifrados · Anonimato Total
-              </p>
-            </div>
           </div>
 
-          {/* Pilar 2: Reconocimiento */}
-          <div className="bg-[#111] border border-[#333] rounded-[24px] p-8 hover:border-[#30d158] transition-all group">
+          {/* Fase 2: Reconocimiento */}
+          <div className="bg-[#111] border border-[#333] rounded-[24px] p-8 hover:border-[#30d158] transition-all">
             <div className="flex items-start gap-4 mb-6">
-              <div className="w-14 h-14 bg-[#30d158]/10 rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:bg-[#30d158]/20 transition-all">
+              <div className="w-14 h-14 bg-[#30d158]/10 rounded-2xl flex items-center justify-center flex-shrink-0">
                 <Radar className="text-[#30d158]" size={28} />
               </div>
-              <div>
-                <h3 className="text-2xl font-bold text-white mb-2">📡 Reconocimiento de Espectro Completo</h3>
-                <p className="text-[#86868b] text-sm leading-relaxed">
-                  No solo miramos tu web principal. Mapeamos toda tu huella digital, desde subdominios olvidados
-                  hasta servidores de desarrollo expuestos. Usamos inteligencia OSINT y Fuzzing avanzado para
-                  descubrir activos que ni siquiera sabías que tenías expuestos.
+              <div className="flex-1">
+                <h3 className="text-2xl font-bold text-white mb-3">2. Reconocimiento y Mapeo de Superficie</h3>
+                <p className="text-[#86868b] text-sm leading-relaxed mb-4">
+                  En función de los objetivos definidos se realiza una fase de reconocimiento inicial orientada a identificar la superficie de ataque expuesta.
                 </p>
+                <ul className="space-y-2 text-sm text-[#86868b]">
+                  <li className="flex gap-2"><span className="text-[#30d158]">•</span> Enumeración de dominios, subdominios, rutas y APIs</li>
+                  <li className="flex gap-2"><span className="text-[#30d158]">•</span> Análisis de documentación (OpenAPI/Swagger)</li>
+                  <li className="flex gap-2"><span className="text-[#30d158]">•</span> Revisión de ficheros JavaScript públicos para descubrir endpoints ocultos</li>
+                  <li className="flex gap-2"><span className="text-[#30d158]">•</span> Mapeo de lógica de negocio y funcionalidades críticas (pagos, autenticación, 2FA, recuperación de cuenta)</li>
+                </ul>
               </div>
-            </div>
-            <div className="border-t border-[#333] pt-4">
-              <p className="text-xs text-[#666] font-mono">
-                → OSINT · Subdomain Enumeration · Asset Discovery
-              </p>
             </div>
           </div>
 
-          {/* Pilar 3: Automatización */}
-          <div className="bg-[#111] border border-[#333] rounded-[24px] p-8 hover:border-[#ff9f0a] transition-all group">
+          {/* Fase 3: Plan de Pruebas OWASP Top 10 */}
+          <div className="bg-[#111] border border-[#333] rounded-[24px] p-8 hover:border-[#ff9f0a] transition-all">
             <div className="flex items-start gap-4 mb-6">
-              <div className="w-14 h-14 bg-[#ff9f0a]/10 rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:bg-[#ff9f0a]/20 transition-all">
-                <Bot className="text-[#ff9f0a]" size={28} />
+              <div className="w-14 h-14 bg-[#ff9f0a]/10 rounded-2xl flex items-center justify-center flex-shrink-0">
+                <Shield className="text-[#ff9f0a]" size={28} />
               </div>
-              <div>
-                <h3 className="text-2xl font-bold text-white mb-2">🤖 Automatización Inteligente</h3>
-                <p className="text-[#86868b] text-sm leading-relaxed">
-                  Desplegamos motores de escaneo de última generación (basados en Nuclei y FFUF) para detectar
-                  miles de vulnerabilidades conocidas en minutos. Nuestro sistema de alertas en tiempo real nos
-                  permite identificar brechas críticas al instante.
+              <div className="flex-1">
+                <h3 className="text-2xl font-bold text-white mb-3">3. Plan de Pruebas por OWASP Top 10</h3>
+                <p className="text-[#86868b] text-sm leading-relaxed mb-6">
+                  Utilizamos el <span className="text-white font-semibold">OWASP Top 10</span> como marco de referencia para definir qué vulnerabilidades evaluar y cómo priorizarlas:
                 </p>
+
+                <div className="grid md:grid-cols-2 gap-4">
+                  <div className="bg-[#000] border border-[#333] rounded-lg p-4">
+                    <h4 className="text-white font-semibold text-sm mb-2 flex items-center gap-2">
+                      <span className="text-[#ff453a]">A01</span> Broken Access Control
+                    </h4>
+                    <p className="text-xs text-[#666]">IDOR, escalada de privilegios, accesos forzados, manipulación de JWT</p>
+                  </div>
+
+                  <div className="bg-[#000] border border-[#333] rounded-lg p-4">
+                    <h4 className="text-white font-semibold text-sm mb-2 flex items-center gap-2">
+                      <span className="text-[#ff453a]">A02</span> Security Misconfiguration
+                    </h4>
+                    <p className="text-xs text-[#666]">Subdomain Takeover, Cache Poisoning, WAF bypass, configuraciones DNS</p>
+                  </div>
+
+                  <div className="bg-[#000] border border-[#333] rounded-lg p-4">
+                    <h4 className="text-white font-semibold text-sm mb-2 flex items-center gap-2">
+                      <span className="text-[#ff453a]">A03</span> Supply Chain Failures
+                    </h4>
+                    <p className="text-xs text-[#666]">Dependencias obsoletas, librerías vulnerables, verificación de integridad</p>
+                  </div>
+
+                  <div className="bg-[#000] border border-[#333] rounded-lg p-4">
+                    <h4 className="text-white font-semibold text-sm mb-2 flex items-center gap-2">
+                      <span className="text-[#ff453a]">A04</span> Cryptographic Failures
+                    </h4>
+                    <p className="text-xs text-[#666]">TLS/HTTPS, algoritmos débiles, datos sensibles en texto claro</p>
+                  </div>
+
+                  <div className="bg-[#000] border border-[#333] rounded-lg p-4">
+                    <h4 className="text-white font-semibold text-sm mb-2 flex items-center gap-2">
+                      <span className="text-[#ff453a]">A05</span> Injection
+                    </h4>
+                    <p className="text-xs text-[#666]">SQLi, NoSQLi, Command Injection, Template Injection, XSS</p>
+                  </div>
+
+                  <div className="bg-[#000] border border-[#333] rounded-lg p-4">
+                    <h4 className="text-white font-semibold text-sm mb-2 flex items-center gap-2">
+                      <span className="text-[#ff453a]">A06</span> Insecure Design
+                    </h4>
+                    <p className="text-xs text-[#666]">Fallos de lógica de negocio, validaciones insuficientes, condiciones de carrera</p>
+                  </div>
+
+                  <div className="bg-[#000] border border-[#333] rounded-lg p-4">
+                    <h4 className="text-white font-semibold text-sm mb-2 flex items-center gap-2">
+                      <span className="text-[#ff453a]">A07</span> Authentication Failures
+                    </h4>
+                    <p className="text-xs text-[#666]">Fuerza bruta, 2FA/MFA débil, gestión de sesiones, robo de tokens</p>
+                  </div>
+
+                  <div className="bg-[#000] border border-[#333] rounded-lg p-4">
+                    <h4 className="text-white font-semibold text-sm mb-2 flex items-center gap-2">
+                      <span className="text-[#ff453a]">A08</span> Integrity Failures
+                    </h4>
+                    <p className="text-xs text-[#666]">Verificación de integridad en software y datos críticos</p>
+                  </div>
+
+                  <div className="bg-[#000] border border-[#333] rounded-lg p-4">
+                    <h4 className="text-white font-semibold text-sm mb-2 flex items-center gap-2">
+                      <span className="text-[#ff453a]">A09</span> Logging & Alerting
+                    </h4>
+                    <p className="text-xs text-[#666]">Eventos críticos sin registro, ausencia de alertas de seguridad</p>
+                  </div>
+
+                  <div className="bg-[#000] border border-[#333] rounded-lg p-4">
+                    <h4 className="text-white font-semibold text-sm mb-2 flex items-center gap-2">
+                      <span className="text-[#ff453a]">A10</span> SSRF & Exception Handling
+                    </h4>
+                    <p className="text-xs text-[#666]">Server-Side Request Forgery, exposición de stacktraces, errores detallados</p>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div className="border-t border-[#333] pt-4">
-              <p className="text-xs text-[#666] font-mono">
-                → Nuclei Engine · FFUF · Real-time Alerts
-              </p>
             </div>
           </div>
 
-          {/* Pilar 4: Validación Manual */}
-          <div className="bg-[#111] border border-[#333] rounded-[24px] p-8 hover:border-[#ff453a] transition-all group">
+          {/* Fase 4: Ejecución y Evidencia */}
+          <div className="bg-[#111] border border-[#333] rounded-[24px] p-8 hover:border-[#ff453a] transition-all">
             <div className="flex items-start gap-4 mb-6">
-              <div className="w-14 h-14 bg-[#ff453a]/10 rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:bg-[#ff453a]/20 transition-all">
-                <Brain className="text-[#ff453a]" size={28} />
+              <div className="w-14 h-14 bg-[#ff453a]/10 rounded-2xl flex items-center justify-center flex-shrink-0">
+                <Terminal className="text-[#ff453a]" size={28} />
               </div>
-              <div>
-                <h3 className="text-2xl font-bold text-white mb-2">🧠 Validación Manual y Lógica de Negocio</h3>
-                <p className="text-[#86868b] text-sm leading-relaxed">
-                  Aquí es donde nos diferenciamos. Las máquinas no entienden el contexto; nosotros sí.
-                  Nuestros expertos utilizan Burp Suite y técnicas manuales para encontrar fallos lógicos
-                  (IDORs, Fraude, Escalada de Privilegios) que ningún software automático puede detectar.
-                  Garantizamos <span className="text-[#ff453a] font-bold">0% de falsos positivos</span>.
+              <div className="flex-1">
+                <h3 className="text-2xl font-bold text-white mb-3">4. Ejecución, Evidencia y Priorización</h3>
+                <p className="text-[#86868b] text-sm leading-relaxed mb-4">
+                  Cada prueba se registra sistemáticamente con evidencia completa:
                 </p>
+                <ul className="space-y-2 text-sm text-[#86868b]">
+                  <li className="flex gap-2"><span className="text-[#ff453a]">•</span> Endpoint afectado, parámetros, payload y respuesta</li>
+                  <li className="flex gap-2"><span className="text-[#ff453a]">•</span> Capturas de pantalla como evidencia gráfica</li>
+                  <li className="flex gap-2"><span className="text-[#ff453a]">•</span> Clasificación por severidad usando <span className="text-white font-semibold">CVSS v4.0</span></li>
+                  <li className="flex gap-2"><span className="text-[#ff453a]">•</span> Asociación a categoría OWASP Top 10</li>
+                  <li className="flex gap-2"><span className="text-[#ff453a]">•</span> Verificación de explotación real (PoC funcional)</li>
+                </ul>
               </div>
-            </div>
-            <div className="border-t border-[#333] pt-4">
-              <p className="text-xs text-[#666] font-mono">
-                → Burp Suite Pro · Manual Testing · Zero False Positives
-              </p>
             </div>
           </div>
+
+          {/* Fase 5: Informe */}
+          <div className="bg-[#111] border border-[#333] rounded-[24px] p-8 hover:border-[#2997ff] transition-all">
+            <div className="flex items-start gap-4 mb-6">
+              <div className="w-14 h-14 bg-[#2997ff]/10 rounded-2xl flex items-center justify-center flex-shrink-0">
+                <FileText className="text-[#2997ff]" size={28} />
+              </div>
+              <div className="flex-1">
+                <h3 className="text-2xl font-bold text-white mb-3">5. Informe Orientado a Empresa</h3>
+                <p className="text-[#86868b] text-sm leading-relaxed mb-4">
+                  Entregamos dos niveles de informe diferenciados:
+                </p>
+                <div className="grid md:grid-cols-2 gap-4">
+                  <div className="bg-[#000] border border-[#2997ff]/30 rounded-lg p-4">
+                    <h4 className="text-white font-semibold text-sm mb-2">📊 Informe Ejecutivo</h4>
+                    <p className="text-xs text-[#666]">Resumen de riesgos agrupados por OWASP Top 10, impacto en negocio y acciones priorizadas</p>
+                  </div>
+                  <div className="bg-[#000] border border-[#2997ff]/30 rounded-lg p-4">
+                    <h4 className="text-white font-semibold text-sm mb-2">🔧 Informe Técnico</h4>
+                    <p className="text-xs text-[#666]">Descripción detallada, evidencia, PoC, puntuación CVSS v4.0 y recomendaciones de mitigación</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
 
         {/* CTA Final */}
         <div className="text-center bg-gradient-to-r from-[#0071e3]/5 to-[#ff453a]/5 border border-[#333] rounded-[24px] p-12">
-          <h3 className="text-3xl font-bold text-white mb-4">¿Listo para una auditoría real?</h3>
+          <h3 className="text-3xl font-bold text-white mb-4">¿Listo para un pentesting profesional?</h3>
           <p className="text-[#86868b] mb-8 max-w-2xl mx-auto">
-            Protege tu infraestructura con la metodología que usan los profesionales.
+            Protege tu infraestructura con la metodología OWASP Top 10 que utilizan los equipos de seguridad más exigentes.
           </p>
           <a
             href="#authorize"
